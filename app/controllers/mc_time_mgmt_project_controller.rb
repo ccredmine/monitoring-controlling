@@ -1,6 +1,5 @@
 class McTimeMgmtProjectController < ApplicationController
-  unloadable
-
+  # Remove unloadable
   layout 'base'
   before_action :find_project, :authorize
   menu_item :redmine_monitoring_controlling

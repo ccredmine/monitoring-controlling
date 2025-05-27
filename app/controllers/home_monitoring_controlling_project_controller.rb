@@ -1,6 +1,5 @@
 class HomeMonitoringControllingProjectController < ApplicationController
-  unloadable
-
+  # Remove unloadable as it's no longer needed in modern Rails
   layout 'base'
   before_action :find_project, :authorize
   menu_item :redmine_monitoring_controlling
